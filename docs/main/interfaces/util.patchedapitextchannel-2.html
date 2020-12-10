@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PatchedGuild | Cordis</title>
+	<title>PatchedAPITextChannel | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/util.html">util</a>
 				</li>
 				<li>
-					<a href="util.patchedguild-2.html">PatchedGuild</a>
+					<a href="util.patchedapitextchannel-2.html">PatchedAPITextChannel</a>
 				</li>
 			</ul>
-			<h1>Interface PatchedGuild</h1>
+			<h1>Interface PatchedAPITextChannel</h1>
 		</div>
 	</div>
 </header>
@@ -71,14 +71,40 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/util.html#requiredprop" class="tsd-signature-type">RequiredProp</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIGuild</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"channels"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"roles"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"member_count"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"large"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"features"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"unavailable"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"widget_enabled"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"max_members"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"max_presences"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"members"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"emojis"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"presences"</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="../modules/util.html#requiredprop" class="tsd-signature-type">RequiredProp</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="util.patchedapiguildchannel-2.html" class="tsd-signature-type">PatchedAPIGuildChannel</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"guild_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"position"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"permission_overwrites"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"name"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"topic"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"nsfw"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_message_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bitrate"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"user_limit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rate_limit_per_user"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"recipients"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"icon"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"owner_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"application_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"parent_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_pin_timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"topic"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"nsfw"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_message_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_pin_timestamp"</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PatchedGuild</span>
+								<span class="target">PatchedAPITextChannel</span>
 							</li>
 						</ul>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="util.patchedapitextchannel-2.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GUILD_TEXT</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/53b1766/libs/util/src/struct/discord/textChannel.ts#L9">libs/util/src/struct/discord/textChannel.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -124,7 +150,12 @@
 						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="util.patchedguild-2.html" class="tsd-kind-icon">Patched<wbr>Guild</a>
+								<a href="util.patchedapitextchannel-2.html" class="tsd-kind-icon">PatchedAPIText<wbr>Channel</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="util.patchedapitextchannel-2.html#type" class="tsd-kind-icon">type</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -150,6 +181,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
