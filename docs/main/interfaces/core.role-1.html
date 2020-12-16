@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PatchedAPIGuildChannel | Cordis</title>
+	<title>Role | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/util.html">util</a>
+					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="util.patchedapiguildchannel-2.html">PatchedAPIGuildChannel</a>
+					<a href="core.role-1.html">Role</a>
 				</li>
 			</ul>
-			<h1>Interface PatchedAPIGuildChannel</h1>
+			<h1>Interface Role</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/util.html#requiredprop" class="tsd-signature-type">RequiredProp</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIChannel</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"name"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"icon"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"owner_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"application_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"position"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"guild_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"permission_overwrites"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"topic"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"nsfw"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_message_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bitrate"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"user_limit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rate_limit_per_user"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"recipients"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"parent_id"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"last_pin_timestamp"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"name"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"guild_id"</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-symbol">{}</span>
+					</li>
+					<li>
+						<span class="tsd-signature-type">SnowflakeEntity</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PatchedAPIGuildChannel</span>
+								<span class="target">Role</span>
 							</li>
 						</ul>
 					</li>
@@ -87,7 +90,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="util.patchedapiguildchannel-2.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-1.html#tags" class="tsd-kind-icon">tags</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.role-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,14 +108,66 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GUILD_CATEGORY</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GUILD_NEWS</span></div>
+					<a name="_rawdata_" class="tsd-anchor"></a>
+					<h3>[raw<wbr>Data]</h3>
+					<div class="tsd-signature tsd-kind-icon">[raw<wbr>Data]<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PatchedAPIRole</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/eb938b7/libs/util/src/struct/discord/guildChannel.ts#L5">libs/util/src/struct/discord/guildChannel.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/eb938b7/libs/core/src/Types.ts#L148">libs/core/src/Types.ts:148</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="createdat" class="tsd-anchor"></a>
+					<h3>created<wbr>At</h3>
+					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core.guild-1.html">Guild</a>.<a href="core.guild-1.html#createdat">createdAt</a></p>
+						<ul>
+							<li>Defined in libs/util/types/struct/Snowflake.d.ts:3</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="createdtimestamp" class="tsd-anchor"></a>
+					<h3>created<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">created<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core.guild-1.html">Guild</a>.<a href="core.guild-1.html#createdtimestamp">createdTimestamp</a></p>
+						<ul>
+							<li>Defined in libs/util/types/struct/Snowflake.d.ts:2</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tags" class="tsd-anchor"></a>
+					<h3>tags</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <a href="core.roletags-1.html" class="tsd-signature-type">RoleTags</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/eb938b7/libs/core/src/Types.ts#L146">libs/core/src/Types.ts:146</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/eb938b7/libs/core/src/Types.ts#L147">libs/core/src/Types.ts:147</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -116,7 +180,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -125,7 +189,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/rest.html">rest</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/util.html">util</a>
 					</li>
 				</ul>
@@ -135,25 +199,28 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html" class="tsd-kind-icon">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/gateway.html" class="tsd-kind-icon">gateway</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-module">
-						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
+						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="util.patchedapiguildchannel-2.html" class="tsd-kind-icon">PatchedAPIGuild<wbr>Channel</a>
+								<a href="core.role-1.html" class="tsd-kind-icon">Role</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="util.patchedapiguildchannel-2.html#type" class="tsd-kind-icon">type</a>
+										<a href="core.role-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+										<a href="core.role-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+										<a href="core.role-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.role-1.html#tags" class="tsd-kind-icon">tags</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-interface">
+										<a href="core.role-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 									</li>
 								</ul>
 							</li>
@@ -161,6 +228,15 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="../modules/gateway.html" class="tsd-kind-icon">gateway</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -182,6 +258,7 @@
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
