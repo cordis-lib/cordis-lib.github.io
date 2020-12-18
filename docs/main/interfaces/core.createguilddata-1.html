@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VoiceState | Cordis</title>
+	<title>CreateGuildData | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.voicestate-1.html">VoiceState</a>
+					<a href="core.createguilddata-1.html">CreateGuildData</a>
 				</li>
 			</ul>
-			<h1>Interface VoiceState</h1>
+			<h1>Interface CreateGuildData</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">VoiceState</span>
+						<span class="target">CreateGuildData</span>
 					</li>
 				</ul>
 			</section>
@@ -82,18 +82,17 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#deaf" class="tsd-kind-icon">deaf</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#member" class="tsd-kind-icon">member</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#mute" class="tsd-kind-icon">mute</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#selfdeaf" class="tsd-kind-icon">self<wbr>Deaf</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#selfmute" class="tsd-kind-icon">self<wbr>Mute</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#selfstream" class="tsd-kind-icon">self<wbr>Stream</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#selfvideo" class="tsd-kind-icon">self<wbr>Video</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#suppress" class="tsd-kind-icon">suppress</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.voicestate-1.html#userid" class="tsd-kind-icon">user<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#afkchannelid" class="tsd-kind-icon">afk<wbr>Channel<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#afktimeout" class="tsd-kind-icon">afk<wbr>Timeout</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#channels" class="tsd-kind-icon">channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#defaultmessagenotifications" class="tsd-kind-icon">default<wbr>Message<wbr>Notifications</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#explicitcontentfilter" class="tsd-kind-icon">explicit<wbr>Content<wbr>Filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#icon" class="tsd-kind-icon">icon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#region" class="tsd-kind-icon">region</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#roles" class="tsd-kind-icon">roles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#systemchannelid" class="tsd-kind-icon">system<wbr>Channel<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.createguilddata-1.html#verificationlevel" class="tsd-kind-icon">verification<wbr>Level</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,122 +101,112 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="channelid" class="tsd-anchor"></a>
-					<h3>channel<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="afkchannelid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> afk<wbr>Channel<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">afk<wbr>Channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L30">libs/core/src/Types.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L62">libs/core/src/Types.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deaf" class="tsd-anchor"></a>
-					<h3>deaf</h3>
-					<div class="tsd-signature tsd-kind-icon">deaf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="afktimeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> afk<wbr>Timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">afk<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L35">libs/core/src/Types.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L63">libs/core/src/Types.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="guildid" class="tsd-anchor"></a>
-					<h3>guild<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">guild<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="channels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> channels</h3>
+					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIGuildCreatePartialChannel</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L29">libs/core/src/Types.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L61">libs/core/src/Types.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="member" class="tsd-anchor"></a>
-					<h3>member</h3>
-					<div class="tsd-signature tsd-kind-icon">member<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIGuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="defaultmessagenotifications" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Message<wbr>Notifications</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Message<wbr>Notifications<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GuildDefaultMessageNotifications</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L33">libs/core/src/Types.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L57">libs/core/src/Types.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mute" class="tsd-anchor"></a>
-					<h3>mute</h3>
-					<div class="tsd-signature tsd-kind-icon">mute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="explicitcontentfilter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> explicit<wbr>Content<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">explicit<wbr>Content<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GuildExplicitContentFilter</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L36">libs/core/src/Types.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L58">libs/core/src/Types.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selfdeaf" class="tsd-anchor"></a>
-					<h3>self<wbr>Deaf</h3>
-					<div class="tsd-signature tsd-kind-icon">self<wbr>Deaf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="icon" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon</h3>
+					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#fileresolvable" class="tsd-signature-type">FileResolvable</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L37">libs/core/src/Types.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L55">libs/core/src/Types.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selfmute" class="tsd-anchor"></a>
-					<h3>self<wbr>Mute</h3>
-					<div class="tsd-signature tsd-kind-icon">self<wbr>Mute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L38">libs/core/src/Types.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L53">libs/core/src/Types.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selfstream" class="tsd-anchor"></a>
-					<h3>self<wbr>Stream</h3>
-					<div class="tsd-signature tsd-kind-icon">self<wbr>Stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="region" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> region</h3>
+					<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L39">libs/core/src/Types.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L54">libs/core/src/Types.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selfvideo" class="tsd-anchor"></a>
-					<h3>self<wbr>Video</h3>
-					<div class="tsd-signature tsd-kind-icon">self<wbr>Video<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="roles" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> roles</h3>
+					<div class="tsd-signature tsd-kind-icon">roles<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#roleresolvable" class="tsd-signature-type">RoleResolvable</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L40">libs/core/src/Types.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L59">libs/core/src/Types.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sessionid" class="tsd-anchor"></a>
-					<h3>session<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="systemchannelid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> system<wbr>Channel<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">system<wbr>Channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L34">libs/core/src/Types.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L64">libs/core/src/Types.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="suppress" class="tsd-anchor"></a>
-					<h3>suppress</h3>
-					<div class="tsd-signature tsd-kind-icon">suppress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="verificationlevel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> verification<wbr>Level</h3>
+					<div class="tsd-signature tsd-kind-icon">verification<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GuildVerificationLevel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L41">libs/core/src/Types.ts:41</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="userid" class="tsd-anchor"></a>
-					<h3>user<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">user<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L31">libs/core/src/Types.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b0bc975/libs/core/src/Types.ts#L56">libs/core/src/Types.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -257,43 +246,40 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.voicestate-1.html" class="tsd-kind-icon">Voice<wbr>State</a>
+								<a href="core.createguilddata-1.html" class="tsd-kind-icon">Create<wbr>Guild<wbr>Data</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a>
+										<a href="core.createguilddata-1.html#afkchannelid" class="tsd-kind-icon">afk<wbr>Channel<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#deaf" class="tsd-kind-icon">deaf</a>
+										<a href="core.createguilddata-1.html#afktimeout" class="tsd-kind-icon">afk<wbr>Timeout</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a>
+										<a href="core.createguilddata-1.html#channels" class="tsd-kind-icon">channels</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#member" class="tsd-kind-icon">member</a>
+										<a href="core.createguilddata-1.html#defaultmessagenotifications" class="tsd-kind-icon">default<wbr>Message<wbr>Notifications</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#mute" class="tsd-kind-icon">mute</a>
+										<a href="core.createguilddata-1.html#explicitcontentfilter" class="tsd-kind-icon">explicit<wbr>Content<wbr>Filter</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#selfdeaf" class="tsd-kind-icon">self<wbr>Deaf</a>
+										<a href="core.createguilddata-1.html#icon" class="tsd-kind-icon">icon</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#selfmute" class="tsd-kind-icon">self<wbr>Mute</a>
+										<a href="core.createguilddata-1.html#name" class="tsd-kind-icon">name</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#selfstream" class="tsd-kind-icon">self<wbr>Stream</a>
+										<a href="core.createguilddata-1.html#region" class="tsd-kind-icon">region</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#selfvideo" class="tsd-kind-icon">self<wbr>Video</a>
+										<a href="core.createguilddata-1.html#roles" class="tsd-kind-icon">roles</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
+										<a href="core.createguilddata-1.html#systemchannelid" class="tsd-kind-icon">system<wbr>Channel<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#suppress" class="tsd-kind-icon">suppress</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.voicestate-1.html#userid" class="tsd-kind-icon">user<wbr>Id</a>
+										<a href="core.createguilddata-1.html#verificationlevel" class="tsd-kind-icon">verification<wbr>Level</a>
 									</li>
 								</ul>
 							</li>
