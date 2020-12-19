@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GuildWelcomeScreenChannel | Cordis</title>
+	<title>GuildPreview | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.guildwelcomescreenchannel-1.html">GuildWelcomeScreenChannel</a>
+					<a href="core.guildpreview-2.html">GuildPreview</a>
 				</li>
 			</ul>
-			<h1>Interface GuildWelcomeScreenChannel</h1>
+			<h1>Interface GuildPreview</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">GuildWelcomeScreenChannel</span>
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GuildPreview</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -82,9 +87,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildwelcomescreenchannel-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildwelcomescreenchannel-1.html#emojiid" class="tsd-kind-icon">emoji<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildwelcomescreenchannel-1.html#emojiname" class="tsd-kind-icon">emoji<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildpreview-2.html#approximatemembercount" class="tsd-kind-icon">approximate<wbr>Member<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildpreview-2.html#approximatepresencecount" class="tsd-kind-icon">approximate<wbr>Presence<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.guildpreview-2.html#discoverysplash" class="tsd-kind-icon">discovery<wbr>Splash</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,32 +98,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="channelid" class="tsd-anchor"></a>
-					<h3>channel<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="approximatemembercount" class="tsd-anchor"></a>
+					<h3>approximate<wbr>Member<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">approximate<wbr>Member<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L219">libs/core/src/Types.ts:219</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/guild.ts#L27">libs/core/src/types/guild.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="emojiid" class="tsd-anchor"></a>
-					<h3>emoji<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">emoji<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="approximatepresencecount" class="tsd-anchor"></a>
+					<h3>approximate<wbr>Presence<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">approximate<wbr>Presence<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L220">libs/core/src/Types.ts:220</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/guild.ts#L28">libs/core/src/types/guild.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="emojiname" class="tsd-anchor"></a>
-					<h3>emoji<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">emoji<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="discoverysplash" class="tsd-anchor"></a>
+					<h3>discovery<wbr>Splash</h3>
+					<div class="tsd-signature tsd-kind-icon">discovery<wbr>Splash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L221">libs/core/src/Types.ts:221</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/guild.ts#L26">libs/core/src/types/guild.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,16 +163,16 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.guildwelcomescreenchannel-1.html" class="tsd-kind-icon">Guild<wbr>Welcome<wbr>Screen<wbr>Channel</a>
+								<a href="core.guildpreview-2.html" class="tsd-kind-icon">Guild<wbr>Preview</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.guildwelcomescreenchannel-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a>
+										<a href="core.guildpreview-2.html#approximatemembercount" class="tsd-kind-icon">approximate<wbr>Member<wbr>Count</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.guildwelcomescreenchannel-1.html#emojiid" class="tsd-kind-icon">emoji<wbr>Id</a>
+										<a href="core.guildpreview-2.html#approximatepresencecount" class="tsd-kind-icon">approximate<wbr>Presence<wbr>Count</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.guildwelcomescreenchannel-1.html#emojiname" class="tsd-kind-icon">emoji<wbr>Name</a>
+										<a href="core.guildpreview-2.html#discoverysplash" class="tsd-kind-icon">discovery<wbr>Splash</a>
 									</li>
 								</ul>
 							</li>

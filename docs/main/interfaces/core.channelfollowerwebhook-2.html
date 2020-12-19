@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Role | Cordis</title>
+	<title>ChannelFollowerWebhook | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.role-1.html">Role</a>
+					<a href="core.channelfollowerwebhook-2.html">ChannelFollowerWebhook</a>
 				</li>
 			</ul>
-			<h1>Interface Role</h1>
+			<h1>Interface ChannelFollowerWebhook</h1>
 		</div>
 	</div>
 </header>
@@ -72,12 +72,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="tsd-signature-symbol">{}</span>
-					</li>
-					<li>
-						<span class="tsd-signature-type">SnowflakeEntity</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Role</span>
+								<span class="target">ChannelFollowerWebhook</span>
 							</li>
 						</ul>
 					</li>
@@ -90,16 +87,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-1.html#tags" class="tsd-kind-icon">tags</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.role-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.channelfollowerwebhook-2.html#token" class="tsd-kind-icon">token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.channelfollowerwebhook-2.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,66 +97,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="_rawdata_" class="tsd-anchor"></a>
-					<h3>[raw<wbr>Data]</h3>
-					<div class="tsd-signature tsd-kind-icon">[raw<wbr>Data]<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PatchedAPIRole</span></div>
+					<a name="token" class="tsd-anchor"></a>
+					<h3>token</h3>
+					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L323">libs/core/src/Types.ts:323</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="createdat" class="tsd-anchor"></a>
-					<h3>created<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.auditlogentry-1.html">AuditLogEntry</a>.<a href="core.auditlogentry-1.html#createdat">createdAt</a></p>
-						<ul>
-							<li>Defined in libs/util/types/struct/Snowflake.d.ts:3</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="createdtimestamp" class="tsd-anchor"></a>
-					<h3>created<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">created<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.auditlogentry-1.html">AuditLogEntry</a>.<a href="core.auditlogentry-1.html#createdtimestamp">createdTimestamp</a></p>
-						<ul>
-							<li>Defined in libs/util/types/struct/Snowflake.d.ts:2</li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L26">libs/core/src/types/webhook.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tags" class="tsd-anchor"></a>
-					<h3>tags</h3>
-					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <a href="core.roletags-1.html" class="tsd-signature-type">RoleTags</a></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChannelFollower</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L321">libs/core/src/Types.ts:321</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L25">libs/core/src/types/webhook.ts:25</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="tostring" class="tsd-anchor"></a>
-					<h3>to<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L322">libs/core/src/Types.ts:322</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -205,22 +152,13 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.role-1.html" class="tsd-kind-icon">Role</a>
+								<a href="core.channelfollowerwebhook-2.html" class="tsd-kind-icon">Channel<wbr>Follower<wbr>Webhook</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.role-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.role-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.role-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
+										<a href="core.channelfollowerwebhook-2.html#token" class="tsd-kind-icon">token</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.role-1.html#tags" class="tsd-kind-icon">tags</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-interface">
-										<a href="core.role-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+										<a href="core.channelfollowerwebhook-2.html#type" class="tsd-kind-icon">type</a>
 									</li>
 								</ul>
 							</li>
@@ -258,7 +196,6 @@
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

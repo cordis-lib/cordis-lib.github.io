@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AuditLogOptionalInfoType | Cordis</title>
+	<title>Role | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,51 +57,117 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.auditlogoptionalinfotype-1.html">AuditLogOptionalInfoType</a>
+					<a href="core.role-2.html">Role</a>
 				</li>
 			</ul>
-			<h1>Enumeration AuditLogOptionalInfoType</h1>
+			<h1>Interface Role</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-symbol">{}</span>
+					</li>
+					<li>
+						<span class="tsd-signature-type">SnowflakeEntity</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Role</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.auditlogoptionalinfotype-1.html#member" class="tsd-kind-icon">member</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="core.auditlogoptionalinfotype-1.html#role" class="tsd-kind-icon">role</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-2.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-2.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.role-2.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.role-2.html#tags" class="tsd-kind-icon">tags</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.role-2.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="member" class="tsd-anchor"></a>
-					<h3>member</h3>
-					<div class="tsd-signature tsd-kind-icon">member<span class="tsd-signature-symbol">:</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_rawdata_" class="tsd-anchor"></a>
+					<h3>[raw<wbr>Data]</h3>
+					<div class="tsd-signature tsd-kind-icon">[raw<wbr>Data]<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PatchedAPIRole</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L70">libs/core/src/Types.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L13">libs/core/src/types/role.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="role" class="tsd-anchor"></a>
-					<h3>role</h3>
-					<div class="tsd-signature tsd-kind-icon">role<span class="tsd-signature-symbol">:</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="createdat" class="tsd-anchor"></a>
+					<h3>created<wbr>At</h3>
+					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="core.user-2.html">User</a>.<a href="core.user-2.html#createdat">createdAt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L69">libs/core/src/Types.ts:69</a></li>
+							<li>Defined in libs/util/types/struct/Snowflake.d.ts:3</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="createdtimestamp" class="tsd-anchor"></a>
+					<h3>created<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">created<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core.user-2.html">User</a>.<a href="core.user-2.html#createdtimestamp">createdTimestamp</a></p>
+						<ul>
+							<li>Defined in libs/util/types/struct/Snowflake.d.ts:2</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tags" class="tsd-anchor"></a>
+					<h3>tags</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <a href="core.roletags-2.html" class="tsd-signature-type">RoleTags</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L11">libs/core/src/types/role.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L12">libs/core/src/types/role.ts:12</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -138,14 +204,23 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
-							<li class="current tsd-kind-enum tsd-parent-kind-module">
-								<a href="core.auditlogoptionalinfotype-1.html" class="tsd-kind-icon">Audit<wbr>Log<wbr>Optional<wbr>Info<wbr>Type</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-module">
+								<a href="core.role-2.html" class="tsd-kind-icon">Role</a>
 								<ul>
-									<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-										<a href="core.auditlogoptionalinfotype-1.html#member" class="tsd-kind-icon">member</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.role-2.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a>
 									</li>
-									<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-										<a href="core.auditlogoptionalinfotype-1.html#role" class="tsd-kind-icon">role</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+										<a href="core.role-2.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+										<a href="core.role-2.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.role-2.html#tags" class="tsd-kind-icon">tags</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-interface">
+										<a href="core.role-2.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 									</li>
 								</ul>
 							</li>
@@ -182,6 +257,8 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

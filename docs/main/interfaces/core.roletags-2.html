@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GetGuildAuditLogQuery | Cordis</title>
+	<title>RoleTags | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.getguildauditlogquery-1.html">GetGuildAuditLogQuery</a>
+					<a href="core.roletags-2.html">RoleTags</a>
 				</li>
 			</ul>
-			<h1>Interface GetGuildAuditLogQuery</h1>
+			<h1>Interface RoleTags</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">GetGuildAuditLogQuery</span>
+						<span class="target">RoleTags</span>
 					</li>
 				</ul>
 			</section>
@@ -82,10 +82,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.getguildauditlogquery-1.html#actiontype" class="tsd-kind-icon">action<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.getguildauditlogquery-1.html#before" class="tsd-kind-icon">before</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.getguildauditlogquery-1.html#limit" class="tsd-kind-icon">limit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.getguildauditlogquery-1.html#userid" class="tsd-kind-icon">user<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.roletags-2.html#botid" class="tsd-kind-icon">bot<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.roletags-2.html#integrationid" class="tsd-kind-icon">integration<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.roletags-2.html#premiumsubscriber" class="tsd-kind-icon">premium<wbr>Subscriber</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,42 +93,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="actiontype" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> action<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">action<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AuditLogEvent</span></div>
+					<a name="botid" class="tsd-anchor"></a>
+					<h3>bot<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">bot<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L151">libs/core/src/Types.ts:151</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L5">libs/core/src/types/role.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="before" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before</h3>
-					<div class="tsd-signature tsd-kind-icon">before<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="integrationid" class="tsd-anchor"></a>
+					<h3>integration<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">integration<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L152">libs/core/src/Types.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L7">libs/core/src/types/role.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="limit" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> limit</h3>
-					<div class="tsd-signature tsd-kind-icon">limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="premiumsubscriber" class="tsd-anchor"></a>
+					<h3>premium<wbr>Subscriber</h3>
+					<div class="tsd-signature tsd-kind-icon">premium<wbr>Subscriber<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L153">libs/core/src/Types.ts:153</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="userid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">user<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L150">libs/core/src/Types.ts:150</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/role.ts#L6">libs/core/src/types/role.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,19 +158,16 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.getguildauditlogquery-1.html" class="tsd-kind-icon">Get<wbr>Guild<wbr>Audit<wbr>Log<wbr>Query</a>
+								<a href="core.roletags-2.html" class="tsd-kind-icon">Role<wbr>Tags</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.getguildauditlogquery-1.html#actiontype" class="tsd-kind-icon">action<wbr>Type</a>
+										<a href="core.roletags-2.html#botid" class="tsd-kind-icon">bot<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.getguildauditlogquery-1.html#before" class="tsd-kind-icon">before</a>
+										<a href="core.roletags-2.html#integrationid" class="tsd-kind-icon">integration<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.getguildauditlogquery-1.html#limit" class="tsd-kind-icon">limit</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.getguildauditlogquery-1.html#userid" class="tsd-kind-icon">user<wbr>Id</a>
+										<a href="core.roletags-2.html#premiumsubscriber" class="tsd-kind-icon">premium<wbr>Subscriber</a>
 									</li>
 								</ul>
 							</li>

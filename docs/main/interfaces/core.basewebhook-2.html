@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IncomingWebhook | Cordis</title>
+	<title>BaseWebhook | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.incomingwebhook-1.html">IncomingWebhook</a>
+					<a href="core.basewebhook-2.html">BaseWebhook</a>
 				</li>
 			</ul>
-			<h1>Interface IncomingWebhook</h1>
+			<h1>Interface BaseWebhook</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,18 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.basewebhook.html" class="tsd-signature-type">BaseWebhook</a>
+						<span class="tsd-signature-type">SnowflakeEntity</span>
+					</li>
+					<li>
+						<span class="tsd-signature-symbol">{}</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">IncomingWebhook</span>
+								<span class="target">BaseWebhook</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="core.incomingwebhook-2.html" class="tsd-signature-type">IncomingWebhook</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -87,16 +95,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.incomingwebhook-1.html#token" class="tsd-kind-icon">token</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.incomingwebhook-1.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.incomingwebhook-1.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.basewebhook-2.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.basewebhook-2.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.basewebhook-2.html#user" class="tsd-kind-icon">user</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,25 +110,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="applicationid" class="tsd-anchor"></a>
 					<h3>application<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">application<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#applicationid">applicationId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L355">libs/core/src/Types.ts:355</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L16">libs/core/src/types/webhook.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="channelid" class="tsd-anchor"></a>
 					<h3>channel<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#channelid">channelId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L350">libs/core/src/Types.ts:350</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L11">libs/core/src/types/webhook.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,7 +135,7 @@
 					<h3>created<wbr>At</h3>
 					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.auditlogentry-1.html">AuditLogEntry</a>.<a href="core.auditlogentry-1.html#createdat">createdAt</a></p>
+						<p>Inherited from <a href="core.user-2.html">User</a>.<a href="core.user-2.html#createdat">createdAt</a></p>
 						<ul>
 							<li>Defined in libs/util/types/struct/Snowflake.d.ts:3</li>
 						</ul>
@@ -142,73 +146,49 @@
 					<h3>created<wbr>Timestamp</h3>
 					<div class="tsd-signature tsd-kind-icon">created<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.auditlogentry-1.html">AuditLogEntry</a>.<a href="core.auditlogentry-1.html#createdtimestamp">createdTimestamp</a></p>
+						<p>Inherited from <a href="core.user-2.html">User</a>.<a href="core.user-2.html#createdtimestamp">createdTimestamp</a></p>
 						<ul>
 							<li>Defined in libs/util/types/struct/Snowflake.d.ts:2</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="guildid" class="tsd-anchor"></a>
 					<h3>guild<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">guild<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#guildid">guildId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L349">libs/core/src/Types.ts:349</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L10">libs/core/src/types/webhook.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcechannel" class="tsd-anchor"></a>
 					<h3>source<wbr>Channel</h3>
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIPartialChannel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#sourcechannel">sourceChannel</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L354">libs/core/src/Types.ts:354</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L15">libs/core/src/types/webhook.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourceguild" class="tsd-anchor"></a>
 					<h3>source<wbr>Guild</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Guild<span class="tsd-signature-symbol">:</span> <a href="core.guild-1.html" class="tsd-signature-type">Guild</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Guild<span class="tsd-signature-symbol">:</span> <a href="core.guild-2.html" class="tsd-signature-type">Guild</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#sourceguild">sourceGuild</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L352">libs/core/src/Types.ts:352</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L13">libs/core/src/types/webhook.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="token" class="tsd-anchor"></a>
-					<h3>token</h3>
-					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L360">libs/core/src/Types.ts:360</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Incoming</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L359">libs/core/src/Types.ts:359</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="user" class="tsd-anchor"></a>
 					<h3>user</h3>
-					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="core.user-1.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="core.user-2.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.basewebhook.html">BaseWebhook</a>.<a href="core.basewebhook.html#user">user</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L351">libs/core/src/Types.ts:351</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/baf473e/libs/core/src/types/webhook.ts#L12">libs/core/src/types/webhook.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,37 +228,31 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.incomingwebhook-1.html" class="tsd-kind-icon">Incoming<wbr>Webhook</a>
+								<a href="core.basewebhook-2.html" class="tsd-kind-icon">Base<wbr>Webhook</a>
 								<ul>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.basewebhook-2.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.incomingwebhook-1.html#token" class="tsd-kind-icon">token</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.incomingwebhook-1.html#type" class="tsd-kind-icon">type</a>
+										<a href="core.basewebhook-2.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.incomingwebhook-1.html#user" class="tsd-kind-icon">user</a>
+										<a href="core.basewebhook-2.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+										<a href="core.basewebhook-2.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.basewebhook-2.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.basewebhook-2.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.basewebhook-2.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.basewebhook-2.html#user" class="tsd-kind-icon">user</a>
 									</li>
 								</ul>
 							</li>
