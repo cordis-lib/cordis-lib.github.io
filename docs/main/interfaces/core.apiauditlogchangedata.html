@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PatchedAPIRole | Cordis</title>
+	<title>APIAuditLogChangeData | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,31 +54,85 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/util.html">util</a>
+					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="util.patchedapirole-2.html">PatchedAPIRole</a>
+					<a href="core.apiauditlogchangedata.html">APIAuditLogChangeData</a>
 				</li>
 			</ul>
-			<h1>Interface PatchedAPIRole</h1>
+			<h1>Interface APIAuditLogChangeData&lt;K, D&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+					</li>
+					<li>
+						<h4>D<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/util.html#requiredprop" class="tsd-signature-type">RequiredProp</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIRole</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"permissions"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"hoist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"mentionable"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"managed"</span><span class="tsd-signature-symbol">&gt;</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">PatchedAPIRole</span>
-							</li>
-						</ul>
+						<span class="target">APIAuditLogChangeData</span>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.apiauditlogchangedata.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.apiauditlogchangedata.html#new_value" class="tsd-kind-icon">new_<wbr>value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.apiauditlogchangedata.html#old_value" class="tsd-kind-icon">old_<wbr>value</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="key" class="tsd-anchor"></a>
+					<h3>key</h3>
+					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L105">libs/core/src/Types.ts:105</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="new_value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> new_<wbr>value</h3>
+					<div class="tsd-signature tsd-kind-icon">new_<wbr>value<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">D</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L107">libs/core/src/Types.ts:107</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="old_value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> old_<wbr>value</h3>
+					<div class="tsd-signature tsd-kind-icon">old_<wbr>value<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">D</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L108">libs/core/src/Types.ts:108</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -90,7 +144,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -99,7 +153,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/rest.html">rest</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/util.html">util</a>
 					</li>
 				</ul>
@@ -109,27 +163,38 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html" class="tsd-kind-icon">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-module">
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
+						<ul>
+							<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+								<a href="core.apiauditlogchangedata.html" class="tsd-kind-icon">APIAudit<wbr>Log<wbr>Change<wbr>Data</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.apiauditlogchangedata.html#key" class="tsd-kind-icon">key</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.apiauditlogchangedata.html#new_value" class="tsd-kind-icon">new_<wbr>value</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.apiauditlogchangedata.html#old_value" class="tsd-kind-icon">old_<wbr>value</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-module">
 						<a href="../modules/gateway.html" class="tsd-kind-icon">gateway</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
-						<ul>
-							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="util.patchedapirole-2.html" class="tsd-kind-icon">PatchedAPIRole</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>
@@ -150,6 +215,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

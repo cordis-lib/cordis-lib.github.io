@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ClientUser | Cordis</title>
+	<title>BaseWebhook | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.clientuser-1.html">ClientUser</a>
+					<a href="core.basewebhook.html">BaseWebhook</a>
 				</li>
 			</ul>
-			<h1>Interface ClientUser</h1>
+			<h1>Interface BaseWebhook</h1>
 		</div>
 	</div>
 </header>
@@ -71,13 +71,18 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-symbol">{}</span>
+						<span class="tsd-signature-type">SnowflakeEntity</span>
 					</li>
 					<li>
-						<span class="tsd-signature-type">SnowflakeEntity</span>
+						<span class="tsd-signature-symbol">{}</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ClientUser</span>
+								<span class="target">BaseWebhook</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="core.incomingwebhook-1.html" class="tsd-signature-type">IncomingWebhook</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -87,39 +92,45 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.clientuser-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.clientuser-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core.clientuser-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.clientuser-1.html#flags" class="tsd-kind-icon">flags</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.clientuser-1.html#mfaenabled" class="tsd-kind-icon">mfa<wbr>Enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.clientuser-1.html#tag" class="tsd-kind-icon">tag</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.clientuser-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="core.basewebhook.html#createdat" class="tsd-kind-icon">created<wbr>At</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="core.basewebhook.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="core.basewebhook.html#user" class="tsd-kind-icon">user</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="_rawdata_" class="tsd-anchor"></a>
-					<h3>[raw<wbr>Data]</h3>
-					<div class="tsd-signature tsd-kind-icon">[raw<wbr>Data]<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PatchedAPIClientUser</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="applicationid" class="tsd-anchor"></a>
+					<h3>application<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">application<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L340">libs/core/src/Types.ts:340</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L355">libs/core/src/Types.ts:355</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="channelid" class="tsd-anchor"></a>
+					<h3>channel<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L350">libs/core/src/Types.ts:350</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="createdat" class="tsd-anchor"></a>
 					<h3>created<wbr>At</h3>
 					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
@@ -130,7 +141,7 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="createdtimestamp" class="tsd-anchor"></a>
 					<h3>created<wbr>Timestamp</h3>
 					<div class="tsd-signature tsd-kind-icon">created<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
@@ -141,55 +152,45 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="flags" class="tsd-anchor"></a>
-					<h3>flags</h3>
-					<div class="tsd-signature tsd-kind-icon">flags<span class="tsd-signature-symbol">:</span> <a href="../modules/util.html#frozenbitfield-1" class="tsd-signature-type">FrozenBitField</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#userflagkeys" class="tsd-signature-type">UserFlagKeys</a><span class="tsd-signature-symbol">, </span><a href="../classes/core.userflags-1.html" class="tsd-signature-type">UserFlags</a><span class="tsd-signature-symbol">&gt;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="guildid" class="tsd-anchor"></a>
+					<h3>guild<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">guild<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L336">libs/core/src/Types.ts:336</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L349">libs/core/src/Types.ts:349</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mfaenabled" class="tsd-anchor"></a>
-					<h3>mfa<wbr>Enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">mfa<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="sourcechannel" class="tsd-anchor"></a>
+					<h3>source<wbr>Channel</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIPartialChannel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L337">libs/core/src/Types.ts:337</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L354">libs/core/src/Types.ts:354</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="sourceguild" class="tsd-anchor"></a>
+					<h3>source<wbr>Guild</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Guild<span class="tsd-signature-symbol">:</span> <a href="core.guild-1.html" class="tsd-signature-type">Guild</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L338">libs/core/src/Types.ts:338</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L352">libs/core/src/Types.ts:352</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="tostring" class="tsd-anchor"></a>
-					<h3>to<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L339">libs/core/src/Types.ts:339</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="user" class="tsd-anchor"></a>
+					<h3>user</h3>
+					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="core.user-1.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L351">libs/core/src/Types.ts:351</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -226,29 +227,32 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
-							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.clientuser-1.html" class="tsd-kind-icon">Client<wbr>User</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+								<a href="core.basewebhook.html" class="tsd-kind-icon">Base<wbr>Webhook</a>
 								<ul>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.clientuser-1.html#_rawdata_" class="tsd-kind-icon">[raw<wbr>Data]</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#applicationid" class="tsd-kind-icon">application<wbr>Id</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.clientuser-1.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#channelid" class="tsd-kind-icon">channel<wbr>Id</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-										<a href="core.clientuser-1.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+										<a href="core.basewebhook.html#createdat" class="tsd-kind-icon">created<wbr>At</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.clientuser-1.html#flags" class="tsd-kind-icon">flags</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+										<a href="core.basewebhook.html#createdtimestamp" class="tsd-kind-icon">created<wbr>Timestamp</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.clientuser-1.html#mfaenabled" class="tsd-kind-icon">mfa<wbr>Enabled</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#guildid" class="tsd-kind-icon">guild<wbr>Id</a>
 									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.clientuser-1.html#tag" class="tsd-kind-icon">tag</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#sourcechannel" class="tsd-kind-icon">source<wbr>Channel</a>
 									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-interface">
-										<a href="core.clientuser-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#sourceguild" class="tsd-kind-icon">source<wbr>Guild</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="core.basewebhook.html#user" class="tsd-kind-icon">user</a>
 									</li>
 								</ul>
 							</li>
@@ -286,7 +290,6 @@
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

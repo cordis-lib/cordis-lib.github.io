@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UserAvatarOptions | Cordis</title>
+	<title>AuditLog | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.useravataroptions-1.html">UserAvatarOptions</a>
+					<a href="core.auditlog-1.html">AuditLog</a>
 				</li>
 			</ul>
-			<h1>Interface UserAvatarOptions</h1>
+			<h1>Interface AuditLog</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UserAvatarOptions</span>
+						<span class="target">AuditLog</span>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +82,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.useravataroptions-1.html#avatar" class="tsd-kind-icon">avatar</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.useravataroptions-1.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.auditlog-1.html#auditlogentires" class="tsd-kind-icon">audit<wbr>Log<wbr>Entires</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.auditlog-1.html#integrations" class="tsd-kind-icon">integrations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.auditlog-1.html#users" class="tsd-kind-icon">users</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.auditlog-1.html#webhooks" class="tsd-kind-icon">webhooks</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,22 +94,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="avatar" class="tsd-anchor"></a>
-					<h3>avatar</h3>
-					<div class="tsd-signature tsd-kind-icon">avatar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<a name="auditlogentires" class="tsd-anchor"></a>
+					<h3>audit<wbr>Log<wbr>Entires</h3>
+					<div class="tsd-signature tsd-kind-icon">audit<wbr>Log<wbr>Entires<span class="tsd-signature-symbol">:</span> <a href="../classes/util.bag-1.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="core.auditlogentry-1.html" class="tsd-signature-type">AuditLogEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AuditLogEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L144">libs/core/src/Types.ts:144</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L137">libs/core/src/Types.ts:137</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="integrations" class="tsd-anchor"></a>
+					<h3>integrations</h3>
+					<div class="tsd-signature tsd-kind-icon">integrations<span class="tsd-signature-symbol">:</span> <a href="../classes/util.bag-1.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="core.integration-1.html" class="tsd-signature-type">Integration</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L143">libs/core/src/Types.ts:143</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L136">libs/core/src/Types.ts:136</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="users" class="tsd-anchor"></a>
+					<h3>users</h3>
+					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <a href="../classes/util.bag-1.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="core.user-1.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L135">libs/core/src/Types.ts:135</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="webhooks" class="tsd-anchor"></a>
+					<h3>webhooks</h3>
+					<div class="tsd-signature tsd-kind-icon">webhooks<span class="tsd-signature-symbol">:</span> <a href="../classes/util.bag-1.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/core.html#webhook" class="tsd-signature-type">Webhook</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/0034f66/libs/core/src/Types.ts#L134">libs/core/src/Types.ts:134</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,13 +169,19 @@
 						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="core.useravataroptions-1.html" class="tsd-kind-icon">User<wbr>Avatar<wbr>Options</a>
+								<a href="core.auditlog-1.html" class="tsd-kind-icon">Audit<wbr>Log</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.useravataroptions-1.html#avatar" class="tsd-kind-icon">avatar</a>
+										<a href="core.auditlog-1.html#auditlogentires" class="tsd-kind-icon">audit<wbr>Log<wbr>Entires</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="core.useravataroptions-1.html#id" class="tsd-kind-icon">id</a>
+										<a href="core.auditlog-1.html#integrations" class="tsd-kind-icon">integrations</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.auditlog-1.html#users" class="tsd-kind-icon">users</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="core.auditlog-1.html#webhooks" class="tsd-kind-icon">webhooks</a>
 									</li>
 								</ul>
 							</li>
