@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ImageOptions | Cordis</title>
+	<title>MessageApplication | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/util.html">util</a>
+					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="util.imageoptions-1.html">ImageOptions</a>
+					<a href="core.messageapplication-2.html">MessageApplication</a>
 				</li>
 			</ul>
-			<h1>Interface ImageOptions</h1>
+			<h1>Interface MessageApplication</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ImageOptions</span>
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">MessageApplication</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -82,9 +87,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="util.imageoptions-1.html#dynamic" class="tsd-kind-icon">dynamic</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="util.imageoptions-1.html#format" class="tsd-kind-icon">format</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="util.imageoptions-1.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.messageapplication-2.html#coverimage" class="tsd-kind-icon">cover<wbr>Image</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,32 +96,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dynamic" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> dynamic</h3>
-					<div class="tsd-signature tsd-kind-icon">dynamic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<a name="coverimage" class="tsd-anchor"></a>
+					<h3>cover<wbr>Image</h3>
+					<div class="tsd-signature tsd-kind-icon">cover<wbr>Image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/c5bd614/libs/util/src/functions/makeDiscordCdnUrl.ts#L9">libs/util/src/functions/makeDiscordCdnUrl.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="format" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> format</h3>
-					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <a href="../modules/util.html#imageformat" class="tsd-signature-type">ImageFormat</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/c5bd614/libs/util/src/functions/makeDiscordCdnUrl.ts#L7">libs/util/src/functions/makeDiscordCdnUrl.ts:7</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="size" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> size</h3>
-					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="../modules/util.html#imagesize" class="tsd-signature-type">ImageSize</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/c5bd614/libs/util/src/functions/makeDiscordCdnUrl.ts#L8">libs/util/src/functions/makeDiscordCdnUrl.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/c5bd614/libs/core/src/types/message.ts#L27">libs/core/src/types/message.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,7 +116,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -142,7 +125,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/rest.html">rest</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/util.html">util</a>
 					</li>
 				</ul>
@@ -152,31 +135,16 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html" class="tsd-kind-icon">brokers</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/gateway.html" class="tsd-kind-icon">gateway</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-module">
-						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
+						<a href="../modules/core.html" class="tsd-kind-icon">core</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="util.imageoptions-1.html" class="tsd-kind-icon">Image<wbr>Options</a>
+								<a href="core.messageapplication-2.html" class="tsd-kind-icon">Message<wbr>Application</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="util.imageoptions-1.html#dynamic" class="tsd-kind-icon">dynamic</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="util.imageoptions-1.html#format" class="tsd-kind-icon">format</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="util.imageoptions-1.html#size" class="tsd-kind-icon">size</a>
+										<a href="core.messageapplication-2.html#coverimage" class="tsd-kind-icon">cover<wbr>Image</a>
 									</li>
 								</ul>
 							</li>
@@ -184,6 +152,15 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="../modules/gateway.html" class="tsd-kind-icon">gateway</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/util.html" class="tsd-kind-icon">util</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
