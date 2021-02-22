@@ -107,6 +107,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.cluster.html#_fetchgatewaycache" class="tsd-kind-icon">_fetch<wbr>Gateway<wbr>Cache</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gateway.cluster.html#_shardoptions" class="tsd-kind-icon">_shard<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.cluster.html#auth" class="tsd-kind-icon">auth</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.cluster.html#guilds" class="tsd-kind-icon">guilds</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.cluster.html#lastidentify" class="tsd-kind-icon">last<wbr>Identify</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.cluster.html#rest" class="tsd-kind-icon">rest</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gateway.cluster.html#shardcount" class="tsd-kind-icon">shard<wbr>Count</a></li>
@@ -132,7 +133,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.cluster.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.cluster.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.cluster.html#fetchgateway" class="tsd-kind-icon">fetch<wbr>Gateway</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gateway.cluster.html#getshard" class="tsd-kind-icon">get<wbr>Shard</a></li>
 							</ul>
 						</section>
 					</div>
@@ -151,7 +151,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L169">libs/gateway/src/websocket/Cluster.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L177">libs/gateway/src/websocket/Cluster.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +187,7 @@
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"open"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"reconecting"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"reconnecting"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"disconnecting"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"debug"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>info<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>info<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
@@ -199,7 +199,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L48">libs/gateway/src/websocket/Cluster.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L51">libs/gateway/src/websocket/Cluster.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +240,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L53">libs/gateway/src/websocket/Cluster.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L56">libs/gateway/src/websocket/Cluster.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +251,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">"reconecting"</span></h5>
+									<h5>event: <span class="tsd-signature-type">"reconnecting"</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
@@ -281,7 +281,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L58">libs/gateway/src/websocket/Cluster.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L61">libs/gateway/src/websocket/Cluster.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,7 +322,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L63">libs/gateway/src/websocket/Cluster.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L66">libs/gateway/src/websocket/Cluster.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -366,7 +366,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L68">libs/gateway/src/websocket/Cluster.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L71">libs/gateway/src/websocket/Cluster.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +410,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L73">libs/gateway/src/websocket/Cluster.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L76">libs/gateway/src/websocket/Cluster.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,7 +445,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L77">libs/gateway/src/websocket/Cluster.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L80">libs/gateway/src/websocket/Cluster.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -496,7 +496,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fetch<wbr>Gateway<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RESTGetAPIGatewayBotResult</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L111">libs/gateway/src/websocket/Cluster.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L114">libs/gateway/src/websocket/Cluster.ts:114</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -511,7 +511,7 @@
 					<div class="tsd-signature tsd-kind-icon">_shard<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/gateway.websocketconnectionoptions.html" class="tsd-signature-type">WebsocketConnectionOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L107">libs/gateway/src/websocket/Cluster.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L110">libs/gateway/src/websocket/Cluster.ts:110</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -526,7 +526,7 @@
 					<div class="tsd-signature tsd-kind-icon">auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L176">libs/gateway/src/websocket/Cluster.ts:176</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L184">libs/gateway/src/websocket/Cluster.ts:184</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -536,12 +536,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="guilds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> guilds</h3>
+					<div class="tsd-signature tsd-kind-icon">guilds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IStore</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIGuild</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L124">libs/gateway/src/websocket/Cluster.ts:124</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Guild storage</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="lastidentify" class="tsd-anchor"></a>
 					<h3>last<wbr>Identify</h3>
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Identify<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L142">libs/gateway/src/websocket/Cluster.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L150">libs/gateway/src/websocket/Cluster.ts:150</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -557,7 +572,7 @@
 					<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RestManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L121">libs/gateway/src/websocket/Cluster.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L129">libs/gateway/src/websocket/Cluster.ts:129</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -572,7 +587,7 @@
 					<div class="tsd-signature tsd-kind-icon">shard<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"auto"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L131">libs/gateway/src/websocket/Cluster.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L139">libs/gateway/src/websocket/Cluster.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -587,7 +602,7 @@
 					<div class="tsd-signature tsd-kind-icon">shards<span class="tsd-signature-symbol">:</span> <a href="gateway.websocketconnection.html" class="tsd-signature-type">WebsocketConnection</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L116">libs/gateway/src/websocket/Cluster.ts:116</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L119">libs/gateway/src/websocket/Cluster.ts:119</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -602,7 +617,7 @@
 					<div class="tsd-signature tsd-kind-icon">starting<wbr>Shard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L126">libs/gateway/src/websocket/Cluster.ts:126</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L134">libs/gateway/src/websocket/Cluster.ts:134</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -617,7 +632,7 @@
 					<div class="tsd-signature tsd-kind-icon">total<wbr>Shard<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"auto"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L136">libs/gateway/src/websocket/Cluster.ts:136</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L144">libs/gateway/src/websocket/Cluster.ts:144</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -632,7 +647,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">APIUser</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L147">libs/gateway/src/websocket/Cluster.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L155">libs/gateway/src/websocket/Cluster.ts:155</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -654,7 +669,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L152">libs/gateway/src/websocket/Cluster.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L160">libs/gateway/src/websocket/Cluster.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -676,7 +691,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L160">libs/gateway/src/websocket/Cluster.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L168">libs/gateway/src/websocket/Cluster.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -698,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L167">libs/gateway/src/websocket/Cluster.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L175">libs/gateway/src/websocket/Cluster.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -723,7 +738,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L196">libs/gateway/src/websocket/Cluster.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L205">libs/gateway/src/websocket/Cluster.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -746,7 +761,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L211">libs/gateway/src/websocket/Cluster.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L212">libs/gateway/src/websocket/Cluster.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -774,7 +789,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L236">libs/gateway/src/websocket/Cluster.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L237">libs/gateway/src/websocket/Cluster.ts:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,7 +811,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L267">libs/gateway/src/websocket/Cluster.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L268">libs/gateway/src/websocket/Cluster.ts:268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -824,7 +839,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L220">libs/gateway/src/websocket/Cluster.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/2c08c5d/libs/gateway/src/websocket/Cluster.ts#L221">libs/gateway/src/websocket/Cluster.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,37 +858,6 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIGatewayBotInfo</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Discord gateway information</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getshard" class="tsd-anchor"></a>
-					<h3>get<wbr>Shard</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Shard<span class="tsd-signature-symbol">(</span>guild<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="gateway.websocketconnection.html" class="tsd-signature-type">WebsocketConnection</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cordisjs/cordis/blob/b00a5c6/libs/gateway/src/websocket/Cluster.ts#L204">libs/gateway/src/websocket/Cluster.ts:204</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the shard the given guild is under</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>guild: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The guild id associated with the shard you want to obtain</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="gateway.websocketconnection.html" class="tsd-signature-type">WebsocketConnection</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -958,6 +942,9 @@
 										<a href="gateway.cluster.html#auth" class="tsd-kind-icon">auth</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-class">
+										<a href="gateway.cluster.html#guilds" class="tsd-kind-icon">guilds</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class">
 										<a href="gateway.cluster.html#lastidentify" class="tsd-kind-icon">last<wbr>Identify</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1001,9 +988,6 @@
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
 										<a href="gateway.cluster.html#fetchgateway" class="tsd-kind-icon">fetch<wbr>Gateway</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="gateway.cluster.html#getshard" class="tsd-kind-icon">get<wbr>Shard</a>
 									</li>
 								</ul>
 							</li>
