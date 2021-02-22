@@ -71,11 +71,15 @@
 				<p>cordis is a fully modular, micro-service based <a href="https://nodejs.org/">Node.js</a> wrapper around the <a href="https://discordapp.com/developers/docs/intro">Discord API</a></p>
 				<p>It is cut up in multiple packages/libraries:</p>
 				<ul>
+					<li><code>@cordis/bitfield</code>, for working with bitfields using BigInts</li>
 					<li><code>@cordis/brokers</code>, message brokers for routing patterns, pub/sub systems and RPC!</li>
-					<li><code>@cordis/core</code>, a library for interfacing with the Cordis services</li>
-					<li><code>@cordis/rest</code>, containing a REST manager for the Discord API, including a rate limiting system and various utilities</li>
-					<li><code>@cordis/gateway</code>, containing a very flexible way of connecting to Discord&#39;s gateway</li>
-					<li><code>@cordis/common</code>, utilities for interacting with Discord or just generally useful functions/structures</li>
+					<li><code>@cordis/common</code>, cordis core utilities</li>
+					<li><code>@cordis/gateway</code>, containing a very flexible way of connecting to Discord&#39;s gateway - with clustering support</li>
+					<li><code>@cordis/queue</code>, simple, small sequential queue for async operations</li>
+					<li><code>@cordis/redis-store</code>, Redis implementation of <code>@cordis/store</code></li>
+					<li><code>@cordis/rest</code>, tooling for making HTTP requests to Discord, with rate limiting handling</li>
+					<li><code>@cordis/snowflake</code>, simple snowflake structure for destructuring Discord IDs into relevant information</li>
+					<li><code>@cordis/store</code>, Simple map-like interface for holding key-value pairs - ships with an in-memory implementation</li>
 				</ul>
 				<p>But also services that hook into RabbitMQ using the libraries mentioned above:</p>
 				<ul>
@@ -85,11 +89,9 @@
 					<h1>Roadmap</h1>
 				</a>
 				<ul>
-					<li>Finishing <code>@cordis/core</code> is the currect absolute priority. No voice support is initially planned; but really high API coverage is.</li>
-					<li>0.1.0 release</li>
-					<li>Unit tests for the entire toolset.</li>
+					<li>0.1.0 release - See <a href="https://github.com/cordisjs/cordis/issues">the remaining issues</a></li>
 					<li>Front facing website and documentation.</li>
-					<li><a href="https://discord.gg/37ysd5dPYk">Community</a></li>
+					<li>Discord community</li>
 				</ul>
 			</div>
 		</div>
