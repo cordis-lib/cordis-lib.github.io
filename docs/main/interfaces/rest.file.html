@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RoutingServerInitOptions | Cordis</title>
+	<title>File | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/brokers.html">brokers</a>
+					<a href="../modules/rest.html">rest</a>
 				</li>
 				<li>
-					<a href="brokers.routingserverinitoptions.html">RoutingServerInitOptions</a>
+					<a href="rest.file.html">File</a>
 				</li>
 			</ul>
-			<h1>Interface RoutingServerInitOptions</h1>
+			<h1>Interface File</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for initializing the routing server</p>
+						<p>Represents a file that can be sent to Discord</p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RoutingServerInitOptions</span>
+						<span class="target">File</span>
 					</li>
 				</ul>
 			</section>
@@ -87,8 +87,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="brokers.routingserverinitoptions.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="brokers.routingserverinitoptions.html#topicbased" class="tsd-kind-icon">topic<wbr>Based</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.file.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.file.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,32 +97,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/rest/src/Fetch.ts#L18">libs/rest/src/Fetch.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Contents of the file</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/brokers/src/brokers/routing/RoutingServer.ts#L12">libs/brokers/src/brokers/routing/RoutingServer.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/rest/src/Fetch.ts#L14">libs/rest/src/Fetch.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Name of the exchange to use</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="topicbased" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> topic<wbr>Based</h3>
-					<div class="tsd-signature tsd-kind-icon">topic<wbr>Based<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/brokers/src/brokers/routing/RoutingServer.ts#L16">libs/brokers/src/brokers/routing/RoutingServer.ts:16</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Wether or not this broker should be using a topic or a direct exchange</p>
+							<p>Name of the file</p>
 						</div>
 					</div>
 				</section>
@@ -137,7 +137,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/bitfield.html">bitfield</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html">brokers</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -155,7 +155,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/redis_store.html">redis-<wbr>store</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/rest.html">rest</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -174,92 +174,9 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/bitfield.html" class="tsd-kind-icon">bitfield</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/brokers.html" class="tsd-kind-icon">brokers</a>
-						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/brokers.broker.html" class="tsd-kind-icon">Broker</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/brokers.brokerutil.html" class="tsd-kind-icon">Broker<wbr>Util</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.pubsubclient.html" class="tsd-kind-icon">Pub<wbr>Sub<wbr>Client</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.pubsubserver.html" class="tsd-kind-icon">Pub<wbr>Sub<wbr>Server</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.routingclient.html" class="tsd-kind-icon">Routing<wbr>Client</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.routingserver.html" class="tsd-kind-icon">Routing<wbr>Server</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.rpcclient.html" class="tsd-kind-icon">Rpc<wbr>Client</a>
-							</li>
-							<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../classes/brokers.rpcserver.html" class="tsd-kind-icon">Rpc<wbr>Server</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="brokers.amqpresult.html" class="tsd-kind-icon">Amqp<wbr>Result</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.consumequeueoptions.html" class="tsd-kind-icon">Consume<wbr>Queue<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.pubsubclientinitoptions.html" class="tsd-kind-icon">Pub<wbr>Sub<wbr>Client<wbr>Init<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="brokers.pubsubserverinitoptions.html" class="tsd-kind-icon">Pub<wbr>Sub<wbr>Server<wbr>Init<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.replydata.html" class="tsd-kind-icon">Reply<wbr>Data</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="brokers.routingclientinitotions.html" class="tsd-kind-icon">Routing<wbr>Client<wbr>Init<wbr>Otions</a>
-							</li>
-							<li class="current tsd-kind-interface tsd-parent-kind-module">
-								<a href="brokers.routingserverinitoptions.html" class="tsd-kind-icon">Routing<wbr>Server<wbr>Init<wbr>Options</a>
-								<ul>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="brokers.routingserverinitoptions.html#name" class="tsd-kind-icon">name</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="brokers.routingserverinitoptions.html#topicbased" class="tsd-kind-icon">topic<wbr>Based</a>
-									</li>
-								</ul>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="brokers.rpcclientinitoptions.html" class="tsd-kind-icon">Rpc<wbr>Client<wbr>Init<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.rpcserverinitoptions.html" class="tsd-kind-icon">Rpc<wbr>Server<wbr>Init<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.sendoptions.html" class="tsd-kind-icon">Send<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.sendtoexchangeoptions.html" class="tsd-kind-icon">Send<wbr>ToExchange<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="brokers.sendtoqueueoptions.html" class="tsd-kind-icon">Send<wbr>ToQueue<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../modules/brokers.html#consumequeuecallback" class="tsd-kind-icon">Consume<wbr>Queue<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-								<a href="../modules/brokers.html#rpcservercallback" class="tsd-kind-icon">Rpc<wbr>Server<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/brokers.html#createamqp" class="tsd-kind-icon">create<wbr>Amqp</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-module">
 						<a href="../modules/common.html" class="tsd-kind-icon">common</a>
 					</li>
@@ -275,9 +192,68 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/redis_store.html" class="tsd-kind-icon">redis-<wbr>store</a>
 					</li>
-					<li class=" tsd-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-module">
 						<a href="../modules/rest.html" class="tsd-kind-icon">rest</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.bucket.html" class="tsd-kind-icon">Bucket</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.httperror.html" class="tsd-kind-icon">HTTPError</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.memorymutex.html" class="tsd-kind-icon">Memory<wbr>Mutex</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.mutex.html" class="tsd-kind-icon">Mutex</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.redismutex.html" class="tsd-kind-icon">Redis<wbr>Mutex</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-module">
+								<a href="../classes/rest.restmanager.html" class="tsd-kind-icon">Rest<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+								<a href="rest.discordfetchoptions.html" class="tsd-kind-icon">Discord<wbr>Fetch<wbr>Options</a>
+							</li>
+							<li class="current tsd-kind-interface tsd-parent-kind-module">
+								<a href="rest.file.html" class="tsd-kind-icon">File</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="rest.file.html#content" class="tsd-kind-icon">content</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="rest.file.html#name" class="tsd-kind-icon">name</a>
+									</li>
+								</ul>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="rest.memoryratelimitdata.html" class="tsd-kind-icon">Memory<wbr>Ratelimit<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="rest.ratelimitdata.html" class="tsd-kind-icon">Ratelimit<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+								<a href="rest.requestoptions.html" class="tsd-kind-icon">Request<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="rest.restmanageroptions.html" class="tsd-kind-icon">Rest<wbr>Manager<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+								<a href="../modules/rest.html#stringrecord" class="tsd-kind-icon">String<wbr>Record</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="../modules/rest.html#user_agent" class="tsd-kind-icon">USER_<wbr>AGENT</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+								<a href="../modules/rest.html#discordfetch" class="tsd-kind-icon">discord<wbr>Fetch</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-module">
 						<a href="../modules/routers.html" class="tsd-kind-icon">routers</a>
 					</li>

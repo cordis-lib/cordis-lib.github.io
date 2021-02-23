@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>snowflake | Cordis</title>
+	<title>routers | Cordis</title>
 	<meta name="description" content="Documentation for Cordis">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="snowflake.html">snowflake</a>
+					<a href="routers.html">routers</a>
 				</li>
 			</ul>
-			<h1>Package snowflake</h1>
+			<h1>Package routers</h1>
 		</div>
 	</div>
 </header>
@@ -65,14 +65,14 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div align = "center">
-						<a href="#cordissnowflake" id="cordissnowflake" style="color: inherit; text-decoration: none;">
-							<h1>@cordis/snowflake</h1>
+						<a href="#cordisrouters" id="cordisrouters" style="color: inherit; text-decoration: none;">
+							<h1>@cordis/routers</h1>
 						</a>
 					</div>
 					<a href="#description" id="description" style="color: inherit; text-decoration: none;">
-						<h1>Description</h1>
+						<h2>Description</h2>
 					</a>
-					<p>Simple package for destructuring (Twitter) Discord snowflakes.</p>
+					<p>Construct API paths using simple JavaScript property accessing and execute requests with method calls.</p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -80,41 +80,29 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
+							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/snowflake.snowflake-1.html" class="tsd-kind-icon">Snowflake</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/snowflake.snowflakecreationdata.html" class="tsd-kind-icon">Snowflake<wbr>Creation<wbr>Data</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="snowflake.html#discord_epoch" class="tsd-kind-icon">DISCORD_<wbr>EPOCH</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="routers.html#irouter" class="tsd-kind-icon">IRouter</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="snowflake.html#getcreationdata" class="tsd-kind-icon">get<wbr>Creation<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="routers.html#buildrestrouter" class="tsd-kind-icon">build<wbr>Rest<wbr>Router</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="discord_epoch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> DISCORD_<wbr>EPOCH</h3>
-					<div class="tsd-signature tsd-kind-icon">DISCORD_<wbr>EPOCH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1420070400000</span><span class="tsd-signature-symbol"> = 1420070400000</span></div>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="irouter" class="tsd-anchor"></a>
+					<h3>IRouter</h3>
+					<div class="tsd-signature tsd-kind-icon">IRouter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>delete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>patch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>post<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>put<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/snowflake/src/index.ts#L1">libs/snowflake/src/index.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/routers/src/IRouter.ts#L3">libs/routers/src/IRouter.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,25 +110,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getcreationdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Creation<wbr>Data</h3>
+					<a name="buildrestrouter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> build<wbr>Rest<wbr>Router</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Creation<wbr>Data<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/snowflake.snowflake-1.html" class="tsd-signature-type">Snowflake</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/snowflake.snowflakecreationdata.html" class="tsd-signature-type">SnowflakeCreationData</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Rest<wbr>Router<span class="tsd-signature-symbol">(</span>manager<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RestManager</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="routers.html#irouter" class="tsd-signature-type">IRouter</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/snowflake/src/index.ts#L8">libs/snowflake/src/index.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/39ea3b5/libs/routers/src/restRouter.ts#L4">libs/routers/src/restRouter.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/snowflake.snowflake-1.html" class="tsd-signature-type">Snowflake</a></h5>
+									<h5>manager: <span class="tsd-signature-type">RestManager</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/snowflake.snowflakecreationdata.html" class="tsd-signature-type">SnowflakeCreationData</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="routers.html#irouter" class="tsd-signature-type">IRouter</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -176,10 +164,10 @@
 					<li class=" tsd-kind-module">
 						<a href="rest.html">rest</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="routers.html">routers</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="snowflake.html">snowflake</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -213,30 +201,24 @@
 					<li class=" tsd-kind-module">
 						<a href="rest.html" class="tsd-kind-icon">rest</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="routers.html" class="tsd-kind-icon">routers</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-module">
-						<a href="snowflake.html" class="tsd-kind-icon">snowflake</a>
+						<a href="routers.html" class="tsd-kind-icon">routers</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-module">
-								<a href="../classes/snowflake.snowflake-1.html" class="tsd-kind-icon">Snowflake</a>
-							</li>
-							<li class=" tsd-kind-interface tsd-parent-kind-module">
-								<a href="../interfaces/snowflake.snowflakecreationdata.html" class="tsd-kind-icon">Snowflake<wbr>Creation<wbr>Data</a>
-							</li>
-							<li class=" tsd-kind-variable tsd-parent-kind-module">
-								<a href="snowflake.html#discord_epoch" class="tsd-kind-icon">DISCORD_<wbr>EPOCH</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+								<a href="routers.html#irouter" class="tsd-kind-icon">IRouter</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="snowflake.html#getcreationdata" class="tsd-kind-icon">get<wbr>Creation<wbr>Data</a>
+								<a href="routers.html#buildrestrouter" class="tsd-kind-icon">build<wbr>Rest<wbr>Router</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="snowflake.html" class="tsd-kind-icon">snowflake</a>
+					</li>
 					<li class=" tsd-kind-module">
 						<a href="store.html" class="tsd-kind-icon">store</a>
 					</li>
