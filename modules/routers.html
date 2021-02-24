@@ -73,6 +73,22 @@
 						<h2>Description</h2>
 					</a>
 					<p>Construct API paths using simple JavaScript property accessing and execute requests with method calls.</p>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h2>Example</h2>
+					</a>
+					<pre><code class="language-js"><span class="hljs-keyword">const</span> { buildRestRouter } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@cordis/router&#x27;</span>);
+<span class="hljs-keyword">const</span> { RestManager } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@cordis/rest&#x27;</span>);
+
+<span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> RestManager(yourToken);
+<span class="hljs-keyword">const</span> router = buildRestRouter(manager);
+
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> router.users[someUserId].get();
+<span class="hljs-built_in">console</span>.log(user);
+</code></pre>
+					<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+						<h2>Documentation</h2>
+					</a>
+					<p>You can find documentation for the whole project over at <a href="https://cordis.didinele.me">https://cordis.didinele.me</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -102,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">IRouter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>delete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>patch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>post<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>put<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/8fbed74/libs/routers/src/IRouter.ts#L3">libs/routers/src/IRouter.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/db87716/libs/routers/src/IRouter.ts#L3">libs/routers/src/IRouter.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/8fbed74/libs/routers/src/restRouter.ts#L19">libs/routers/src/restRouter.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/db87716/libs/routers/src/restRouter.ts#L19">libs/routers/src/restRouter.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -134,7 +150,7 @@
 <span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> RestManager(yourToken);
 <span class="hljs-keyword">const</span> router = buildRestRouter(manager);
 
-<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> routers.users[someUserId].get();
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> router.users[someUserId].get();
 <span class="hljs-built_in">console</span>.log(user);
 </code></pre>
 									</dd>
