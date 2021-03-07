@@ -61,35 +61,59 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<div align="center">
-					<br/>
-					<p align="center">
-						<img width="190" height="190" src="media/cordis_no_letters_black.png">
+					<img width="400" height="400" src="media/cordis_transparent.png">
+					<h4>
+						A fully modular, micro-service based <a href="https://nodejs.org/">Node.js</a> wrapper around the <a href="https://discordapp.com/developers/docs/intro">Discord API</a>
+						</h3>
+						<p align="center">
+							<br />
+							<h3>
+								<strong>
+									<a href="https://cordis.didinele.me/">Explore the docs »</a><a href="https://discord.gg/37ysd5dPYk"> Join Our Discord!</a>
+								</strong>
+								</h2>
+						</p>
+						<p>
+							<img src="https://github.com/cordis-lib/cordis/actions/workflows/quality.yml/badge.svg" alt="Quality Check">
+							<img src="https://github.com/cordis-lib/cordis/actions/workflows/docs.yml/badge.svg" alt="Deploy Docs"><br>
+							<a href="https://github.com/cordis-lib/cordis/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="License: APACHE 2.0"></a>
+							<a href="https://github.com/cordis-lib/cordis/issues"><img src="https://img.shields.io/github/issues-raw/cordis-lib/cordis.svg?maxAge=25000" alt="Issues"></a>
+							<a href="https://github.com/cordis-lib/cordis/pulls"><img src="https://img.shields.io/github/issues-pr/cordis-lib/cordis.svg?style=flat" alt="GitHub pull requests"></a><br>
+						</p>
 				</div>
-				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
-					<h1>About</h1>
+				<a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
+					<h1>Packages</h1>
 				</a>
-				<p>cordis is a fully modular, micro-service based <a href="https://nodejs.org/">Node.js</a> wrapper around the <a href="https://discordapp.com/developers/docs/intro">Discord API</a></p>
-				<p>It is cut up in multiple packages/libraries:</p>
+				<p>Cordis is cut up in the form of multiple packages/libraries:</p>
 				<ul>
-					<li><code>@cordis/bitfield</code>, for working with bitfields using BigInts</li>
-					<li><code>@cordis/brokers</code>, message brokers for routing patterns, pub/sub systems and RPC!</li>
-					<li><code>@cordis/common</code>, cordis core utilities</li>
-					<li><code>@cordis/gateway</code>, containing a very flexible way of connecting to Discord&#39;s gateway - with clustering support</li>
-					<li><code>@cordis/queue</code>, simple, small sequential queue for async operations</li>
-					<li><code>@cordis/redis-store</code>, Redis implementation of <code>@cordis/store</code></li>
-					<li><code>@cordis/rest</code>, tooling for making HTTP requests to Discord, with rate limiting handling</li>
-					<li><code>@cordis/routers</code>, make API requests with ease using simple dynamic javascript property accessing</li>
-					<li><code>@cordis/snowflake</code>, simple snowflake structure for destructuring Discord IDs into relevant information</li>
-					<li><code>@cordis/store</code>, Simple map-like interface for holding key-value pairs - ships with an in-memory implementation</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/bitfield"><code>@cordis/bitfield</code></a> - A simple structure for working with bitfields using BigInts</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/brokers"><code>@cordis/brokers</code></a> - Message brokers for routing patterns, pub/sub systems and RPC!</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/common"><code>@cordis/common</code></a> - Common structures and utility shared across packages.</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/gateway"><code>@cordis/gateway</code></a> - A very flexible way of connecting to Discord&#39;s gateway, with clustering support.<ul>
+							<li><a href="https://github.com/cordis-lib/cordis/tree/main/services/gateway"><code>@cordis/gateway-service</code></a> (<a href="https://hub.docker.com/r/cordislib/gateway">Docker</a>) - Service that hooks into RabbitMQ using <code>@cordis/gateway</code></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/queue"><code>@cordis/queue</code></a> - A simple and compact sequential queue for async operations</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/redis-store"><code>@cordis/redis-store</code></a> - A Redis implementation of <code>@cordis/store</code></li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/rest"><code>@cordis/rest</code></a> - Tooling for making HTTP requests to Discord, with rate limiting handling</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/routers"><code>@cordis/routers</code></a> - Make API requests with ease using simple dynamic JavaScript property accessing</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/snowflake"><code>@cordis/snowflake</code></a> - A simple snowflake structure for destructuring Discord IDs into relevant information</li>
+					<li><a href="https://github.com/cordis-lib/cordis/tree/main/libs/store"><code>@cordis/store</code></a> - A simple map-like interface for holding key-value pairs - ships with an in-memory implementation</li>
 				</ul>
-				<p>But also services that hook into RabbitMQ using the libraries mentioned above:</p>
-				<ul>
-					<li><code>@cordis/gateway-service</code> - <a href="https://hub.docker.com/r/cordislib/gateway">https://hub.docker.com/r/cordislib/gateway</a></li>
-				</ul>
-				<a href="#come-talk-to-me-on-discord" id="come-talk-to-me-on-discord" style="color: inherit; text-decoration: none;">
-					<h1>Come talk to me on Discord!</h1>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h1>Contributing</h1>
 				</a>
-				<p><strong>Permanent invite link</strong>: <a href="https://discord.gg/37ysd5dPYk">https://discord.gg/37ysd5dPYk</a></p>
+				<p>We make use of <a href="https://pnpm.js.org/"><code>PNPM</code></a> to manage our monorepo setup. It is expected that you have an up-to-date version of it. </p>
+				<p>Please ensure you run <code>pnpm run lint</code>, <code>pnpm run build</code>, and <code>pnpm run test</code> in the root before pushing your commits.</p>
+				<p>Please ensure that you follow our <a href="https://github.com/discordjs/discord.js/blob/master/.github/CODE_OF_CONDUCT.md">Code Of Conduct</a>.</p>
+				<p>If all checks out, <a href="https://github.com/cordis-lib/cordis/compare">Submit a Pull Request</a></p>
+				<a href="#licensing" id="licensing" style="color: inherit; text-decoration: none;">
+					<h1>LICENSING</h1>
+				</a>
+				<p>© 2020, <a href="https://github.com/didinele">didinele</a>. Some rights reserved.</p>
+				<blockquote>
+					<p>Cordis is licensed under <a href="https://github.com/cordis-lib/cordis/blob/main/LICENSE">Apache 2.0</a></p>
+				</blockquote>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
