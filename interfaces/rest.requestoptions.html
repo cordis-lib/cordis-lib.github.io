@@ -106,6 +106,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.requestoptions.html#path" class="tsd-kind-icon">path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.requestoptions.html#query" class="tsd-kind-icon">query</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.requestoptions.html#reason" class="tsd-kind-icon">reason</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.requestoptions.html#retryafterratelimit" class="tsd-kind-icon">retry<wbr>After<wbr>Ratelimit</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">controller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AbortController</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L85">libs/rest/src/Rest.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L92">libs/rest/src/struct/Rest.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L101">libs/rest/src/Rest.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L108">libs/rest/src/struct/Rest.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <a href="rest.file.html" class="tsd-signature-type">File</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L97">libs/rest/src/Rest.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L104">libs/rest/src/struct/Rest.ts:104</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Headers</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L81">libs/rest/src/Rest.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L88">libs/rest/src/struct/Rest.ts:88</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L77">libs/rest/src/Rest.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L84">libs/rest/src/struct/Rest.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -194,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L73">libs/rest/src/Rest.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L80">libs/rest/src/struct/Rest.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Q</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L89">libs/rest/src/Rest.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L96">libs/rest/src/struct/Rest.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -224,12 +225,27 @@
 					<div class="tsd-signature tsd-kind-icon">reason<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L93">libs/rest/src/Rest.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L100">libs/rest/src/struct/Rest.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Reason for the action - sets the X-Audit-Log-Reason header, as requested by Discord - seen in audit logs</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="retryafterratelimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> retry<wbr>After<wbr>Ratelimit</h3>
+					<div class="tsd-signature tsd-kind-icon">retry<wbr>After<wbr>Ratelimit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L112">libs/rest/src/struct/Rest.ts:112</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Wether or not this request should be re-attempted after a ratelimit is waited out</p>
 						</div>
 					</div>
 				</section>
@@ -360,6 +376,9 @@
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
 										<a href="rest.requestoptions.html#reason" class="tsd-kind-icon">reason</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="rest.requestoptions.html#retryafterratelimit" class="tsd-kind-icon">retry<wbr>After<wbr>Ratelimit</a>
 									</li>
 								</ul>
 							</li>

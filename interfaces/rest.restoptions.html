@@ -90,6 +90,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.restoptions.html#abortafter" class="tsd-kind-icon">abort<wbr>After</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.restoptions.html#mutex" class="tsd-kind-icon">mutex</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.restoptions.html#retries" class="tsd-kind-icon">retries</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rest.restoptions.html#retryafterratelimit" class="tsd-kind-icon">retry<wbr>After<wbr>Ratelimit</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">abort<wbr>After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L20">libs/rest/src/Rest.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L22">libs/rest/src/struct/Rest.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -118,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">mutex<span class="tsd-signature-symbol">:</span> <a href="../classes/rest.mutex.html" class="tsd-signature-type">Mutex</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L25">libs/rest/src/Rest.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L27">libs/rest/src/struct/Rest.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -138,13 +139,33 @@
 					<div class="tsd-signature tsd-kind-icon">retries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/19c67c4/libs/rest/src/Rest.ts#L16">libs/rest/src/Rest.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L18">libs/rest/src/struct/Rest.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>How many times to retry making a request before giving up</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="retryafterratelimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> retry<wbr>After<wbr>Ratelimit</h3>
+					<div class="tsd-signature tsd-kind-icon">retry<wbr>After<wbr>Ratelimit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cordis-lib/cordis/blob/1fd194d/libs/rest/src/struct/Rest.ts#L32">libs/rest/src/struct/Rest.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Wether or not requests, by default, should be re-attempted after a ratelimit is waited out</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>true</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -262,6 +283,9 @@
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
 										<a href="rest.restoptions.html#retries" class="tsd-kind-icon">retries</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="rest.restoptions.html#retryafterratelimit" class="tsd-kind-icon">retry<wbr>After<wbr>Ratelimit</a>
 									</li>
 								</ul>
 							</li>
